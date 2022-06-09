@@ -4,3 +4,10 @@
     box-sizing: border-box;
 }
 /* style for all End */
+/* Home */
+.home{
+    background-image:url('../assets/1.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+/* Home  End */
