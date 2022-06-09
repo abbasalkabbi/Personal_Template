@@ -2,7 +2,7 @@
 *,*::after,*::before{
     margin: 0; padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 /* style for all End */
 /* Nav */
@@ -24,6 +24,77 @@ nav.animate{
     width: 100vw;
     height: 100vh;
     position: relative;
+}
+.home .background{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+}
+/* image  */
+.home .content .image_wrap{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 33px;
+    position: relative;
+    z-index: 2;
+    
+}
+.home .content .image_wrap .main{
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.home .content .image_wrap .bg{
+    position: absolute;
+    content: "";
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.08);
+    z-index: -2;
+}
 
+/* name */
+.home .content .name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home .content .name p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+/* rol-job */
+.home .content .rol-job p{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Poppins";
 }
 /* Home  End */
