@@ -5,6 +5,9 @@
     overflow: hidden;
 }
 /* style for all End */
+:root {
+    --maincolor: #1e90ff;
+}
 /* Nav */
 nav{
     position:fixed;
@@ -105,7 +108,13 @@ nav.animate{
     font-size: 60px;
 }
 .dynamic-text > .txt {
-    border-right: 0.2rem solid #777;
+    border-right: 1px solid #777;
+    animation: blink-caret .75s  infinite;
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    0%{ border-color: transparent }
+    50% { border-color: #777; }
 }
 
 /* Home  End */
