@@ -91,10 +91,21 @@ nav.animate{
     font-family: sans-serif;
 }
 /* rol-job */
-.home .content .rol-job p{
-    color: #fff;
-    font-size: 19px;
-    font-weight: 500;
-    font-family: "Poppins";
+.home .content .rol-job {
+    display: inline-flex;
 }
+.home .content .rol-job  .static-text{
+    color: #eee;
+    font-size: 60px;
+    font-weight: 400;
+}
+.home .content .rol-job .dynamic-text{
+    margin-left: 15px;
+    color: blue;
+    font-size: 60px;
+}
+.dynamic-text > .txt {
+    border-right: 0.2rem solid #777;
+}
+
 /* Home  End */
