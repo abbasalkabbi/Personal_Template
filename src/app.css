@@ -139,6 +139,16 @@ nav.animate{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+}
+.about header h2{
+    color: var(--maincolor);
+    font-size: 64px;
+    font-weight: 600;
+
+}
+.about header h3{
+    font-size: 34px;
 }
 /* Header About End */
 /* content About */
@@ -213,6 +223,7 @@ nav.animate{
 }
 .about .content .right .info >li >i{
     margin: 0px 10px 0px 0px;
+    color: var(--maincolor);
 }
 .about .content .right .info >li a{
     text-decoration:none;
