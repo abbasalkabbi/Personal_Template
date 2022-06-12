@@ -1,5 +1,7 @@
 // decaler var
-const navbar=document.querySelector("nav")
+const navbar=document.querySelector("nav"),
+    home=document.querySelector('.home'),
+    about=document.querySelector('.about');
 // decaler var End 
 
 // add function to Nav bar 
@@ -10,8 +12,40 @@ function ShowNav(){
     }else{
         navbar.classList.remove("animate")
     }
-   
 }
+// addEventListener scroll
+window.addEventListener('scroll',()=> changeclass())
+// addEventListener scroll End 
+//  check is viwe in element
+function isInViewport(elem) {
+    let bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= -100 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right-100 <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+//  chenge class in nav
+function changeclass(){
+    let home_nav=document.querySelector(".home-nav"),
+    about_nav=document.querySelector(".about-nav")
+    // contact_nav=document.querySelector(".contact-nav");
+    if(isInViewport(home)){
+        // add class
+        home_nav.classList.add('active')
+        // remove class
+        about_nav.classList.remove('active')
+    }else if(isInViewport(about)){
+        // add class 
+        about_nav.classList.add('active')
+        // remove class 
+        home_nav.classList.remove('active')
+    }
+
+}
+
+
 // add function to Nav bar  END
 // typing 
 
@@ -65,6 +99,8 @@ document.addEventListener('DOMContentLoaded', init);
 
 // Init App
 function init() {
+    // changeclass nav bar
+    changeclass()
     // rol-job
     const txtElement = document.querySelector('.rol-job .dynamic-text');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
