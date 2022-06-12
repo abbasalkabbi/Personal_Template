@@ -157,6 +157,13 @@ nav.animate{
     float:right;
     background-color: blue;
 }
+/* right info  */
+.about .content .right .info >li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* right info  END*/
 /* right content End*/
 /* content About ENd*/
 /* About End */

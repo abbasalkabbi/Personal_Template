@@ -65,9 +65,15 @@ document.addEventListener('DOMContentLoaded', init);
 
 // Init App
 function init() {
-    const txtElement = document.querySelector('.dynamic-text');
+    // rol-job
+    const txtElement = document.querySelector('.rol-job .dynamic-text');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
   // Init TypeWriter
     new TypingText(txtElement, words, wait);
+  // About
+    const aboutElement=document.querySelector(".about .dynamic-text"),
+    aboutwords = JSON.parse(aboutElement.getAttribute('data-words')),
+    aboutwait = aboutElement.getAttribute('data-wait');
+    new TypingText(aboutElement, aboutwords, aboutwait);
 }
