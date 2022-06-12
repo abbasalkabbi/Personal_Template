@@ -1,9 +1,29 @@
 // decaler var
 const navbar=document.querySelector("nav"),
     home=document.querySelector('.home'),
-    about=document.querySelector('.about');
+    about=document.querySelector('.about'),
+    cursor=document.querySelector(".cursor"),
+    cursor2=document.querySelector(".cursor2"),
+    a = document.querySelectorAll("a");
 // decaler var End 
+// cursor
+window.addEventListener('mousemove',(e)=> {
+    cursor.style.cssText=cursor2.style.cssText=`left:${e.clientX}px;top:${e.clientY}px;`
+})
+//  loop for add hover animate
+for (let x of a) {
+    x.addEventListener('mousemove',()=>{
+        cursor.classList.add('active')
+        cursor2.classList.add('active')
+        
+    })
+    x.addEventListener('mouseout',()=>{
+        cursor.classList.remove('active')
+        cursor2.classList.remove('active')
+    })
 
+}
+// cursor End
 // add function to Nav bar 
 window.onscroll=()=>ShowNav()
 function ShowNav(){
