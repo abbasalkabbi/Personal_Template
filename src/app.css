@@ -107,17 +107,18 @@ nav.animate{
 }
 .home .content .rol-job .dynamic-text{
     margin-left: 15px;
-    color: blue;
+    color:var(--maincolor);
     font-size: 60px;
 }
 .dynamic-text > .txt {
-    border-right: 1px solid #777;
+    border-right: 1px solid var(--maincolor);
     animation: blink-caret .75s  infinite;
+    color: var(--maincolor);
 }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     0%{ border-color: transparent }
-    50% { border-color: #777; }
+    50% { border-color: var(--maincolor); }
 }
 
 /* Home  End */
@@ -175,7 +176,7 @@ nav.animate{
     bottom: 10px;
     left: 25px;
     right: 10px;
-    background-color: rgb(247, 20, 20);
+    background-color: var(--maincolor);
     z-index: -2;
     border-radius: 1%;
 }
@@ -216,29 +217,24 @@ nav.animate{
 .about .content .right .info >li a{
     text-decoration:none;
     position: relative;
+    color: #000;
 }
 .about .content .right .info >li a::before{
     content: '';
     width: 0%;
     height: 1px;
-    background-color: red;
+    background-color: var(--maincolor);
     position: absolute;
     bottom: -1px;
     z-index: 10;
     transition: all ease-in-out 1.3s;
 }
 .about .content .right .info >li a:hover::before{
-    content: '';
     width: 100%;
-    height: 1px;
-    background-color: red;
-    position: absolute;
-    bottom: -1px;
-    z-index: 10;
 }
 
 .about .content .right .info >li a:hover{
-    color: #1e90ff;
+    color: var(--maincolor);
 }
 /* right info  END*/
 /* right content End*/
