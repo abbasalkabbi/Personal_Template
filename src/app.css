@@ -214,11 +214,31 @@ nav.animate{
     margin: 0px 10px 0px 0px;
 }
 .about .content .right .info >li a{
-    text-decoration: none;
+    text-decoration:none;
+    position: relative;
 }
+.about .content .right .info >li a::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -1px;
+    z-index: 10;
+    transition: all ease-in-out 1.3s;
+}
+.about .content .right .info >li a:hover::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    bottom: -1px;
+    z-index: 10;
+}
+
 .about .content .right .info >li a:hover{
     color: #1e90ff;
-    text-decoration: solid black 1px;
 }
 /* right info  END*/
 /* right content End*/
