@@ -291,10 +291,16 @@ nav .nav-item .active{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
+    font-family: Poppins;
+
 }
 .about .content .right  p{
     width: 80%;
     font-size: 16px;
+    font-family: mulish;
+}
+.about .content .right  p span{
+    color: var(--maincolor);
 }
 /* right info  */
 .about .content .right .info{
