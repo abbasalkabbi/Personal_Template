@@ -315,6 +315,7 @@ nav .nav-item .active{
     flex-direction: row;
     align-items: center;
     font-size: 16px;
+    font-family: mulish;
 }
 .about .content .right .info >li >i{
     margin: 0px 10px 0px 0px;
