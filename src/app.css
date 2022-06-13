@@ -265,6 +265,7 @@ nav .nav-item .active{
     background-position: center;
     background-size: cover;
     border: 5px solid #fff;
+    
 }
 .about .content .left .bg{
     position: absolute;
@@ -273,9 +274,10 @@ nav .nav-item .active{
     bottom: 10px;
     left: 25px;
     right: 10px;
-    background-color: var(--maincolor);
+    /* background-color: var(--maincolor); */
     z-index: -2;
     border-radius: 1%;
+    border: var(--maincolor) 10px dotted;
 }
 /* left content End*/
 /* right content */
