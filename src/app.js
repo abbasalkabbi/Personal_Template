@@ -2,6 +2,7 @@
 const navbar=document.querySelector("nav"),
     home=document.querySelector('.home'),
     about=document.querySelector('.about'),
+    services=document.querySelector('.services'),
     cursor=document.querySelector(".cursor"),
     cursor2=document.querySelector(".cursor2"),
     a = document.querySelectorAll("a");
@@ -49,20 +50,31 @@ function isInViewport(elem) {
 //  chenge class in nav
 function changeclass(){
     let home_nav=document.querySelector(".home-nav"),
-    about_nav=document.querySelector(".about-nav")
+    about_nav=document.querySelector(".about-nav"),
+    services_nav=document.querySelector(".services-nav")
+    console.log("1")
     // contact_nav=document.querySelector(".contact-nav");
     if(isInViewport(home)){
         // add class
         home_nav.classList.add('active')
         // remove class
         about_nav.classList.remove('active')
+        services_nav.classList.remove('active')
     }else if(isInViewport(about)){
+        
         // add class 
         about_nav.classList.add('active')
         // remove class 
         home_nav.classList.remove('active')
+        services_nav.classList.remove('active')
+    }else if(isInViewport(services)){
+        // add class 
+        services_nav.classList.add('active')
+        // remove class 
+        home_nav.classList.remove('active')
+        about_nav.classList.remove('active')
     }
-
+    
 }
 
 
