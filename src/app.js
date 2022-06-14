@@ -43,8 +43,8 @@ function isInViewport(elem) {
     return (
         bounding.top >= 0 &&
         bounding.left >= -100 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         bounding.right-100 <= (window.innerWidth || document.documentElement.clientWidth)
+        // bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     );
 };
 //  chenge class in nav
