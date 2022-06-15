@@ -183,3 +183,9 @@ function init() {
     aboutwait = aboutElement.getAttribute('data-wait');
     new TypingText(aboutElement, aboutwords, aboutwait);
 }
+
+// for mobile
+function myFunction(x) {
+    x.classList.toggle("change");
+    navbar.classList.toggle('show')
+}
