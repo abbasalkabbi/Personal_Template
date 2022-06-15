@@ -4,6 +4,29 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+/* Header in page */
+header{
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+header h2{
+    color: var(--maincolor);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+
+
+}
+header h3{
+    font-size: 30px;
+    font-family: Poppins;
+}
+/* Header page End */
 /* style for all End */
 :root {
     --maincolor: #1e90ff;
@@ -214,34 +237,10 @@ nav .nav-item .active{
 .about > *{
     overflow: hidden;
 }
-/* Header About */
-.about header{
-    padding: 20px;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.about header h2{
-    color: var(--maincolor);
-    font-size: 16px;
-    font-weight: 600;
-    font-family: Poppins;
-
-
-}
-.about header h3{
-    font-size: 30px;
-    font-family: Poppins;
-
-}
-/* Header About End */
 /* content About */
 .about .content{
     width: 100%;
-    height: 80%;
+    height: calc(100% - 200px);
 
 }
 /* left content */
@@ -355,49 +354,24 @@ nav .nav-item .active{
 /* services   */
 .services{
     width: 100vw;
-    height: 1100px;
+    min-height:100vh;
+    max-height: fit-content;
     padding: 10px 80px;
     background-color: #f9f9f9;
 }
-/* Header services */
-.services header{
-    padding: 20px;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.services header h2{
-    color: var(--maincolor);
-    font-size: 16px;
-    font-weight: 600;
-    font-family: Poppins;
-
-
-}
-.services header h3{
-    font-size: 30px;
-    font-family: Poppins;
-}
-/* Header services End */
 /* content services */
-.services .content{
-    width: 100%;
-    height: 800px;
-}
 /* list */
-.services .content .list{
+.services  .content{
     list-style: none;
     width: 100%;
-    height: 100%;
+    min-height: calc(100% - 200px);
+    max-height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 /* item */
-.services .content .list .item{
+.services .content  .item{
     margin: 10px 20px;
     width: 300px;
     height: 300px;
@@ -409,19 +383,46 @@ nav .nav-item .active{
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
     border-radius: 5px;
 }
-.services .content .list .item i{
+.services .content  .item i{
     color: var(--maincolor);
 }
 .services .content .list .item .title{
     font-size: 18px;
     font-family: Poppins;
 }
-.services .content .list .item p{
+.services .content  .item p{
     font-size: 16px;
     font-family:mulish ;
 }
 
-
 /* list END */
 /* content services  END*/
 /* services   END */
+/* my work  */
+.mywork {
+    width: 100vw;
+    min-height:100vh;
+    max-height: fit-content;
+    padding: 10px 80px;
+    background-color: #fff;
+}
+/* content */
+.mywork .content{
+    width: 100%;
+    min-height: calc(100% - 200px);
+    max-height: fit-content;
+    border: 1px solid saddlebrown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*  item  */
+.mywork .content .item{
+    width: 300px ;
+    height: 300px;
+    border: #000 solid 1px;
+    margin: 10px 20px;
+}
+/*  item  END */
+/* content END  */
+/* my work END */

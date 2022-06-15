@@ -3,6 +3,7 @@ const navbar=document.querySelector("nav"),
     home=document.querySelector('.home'),
     about=document.querySelector('.about'),
     services=document.querySelector('.services'),
+    mywork=document.querySelector('.mywork'),
     cursor=document.querySelector(".cursor"),
     cursor2=document.querySelector(".cursor2"),
     a = document.querySelectorAll("a");
@@ -52,6 +53,7 @@ function changeclass(){
     let home_nav=document.querySelector(".home-nav"),
     about_nav=document.querySelector(".about-nav"),
     services_nav=document.querySelector(".services-nav")
+    mywork_nav=document.querySelector(".mywork-nav")
     console.log("1")
     // contact_nav=document.querySelector(".contact-nav");
     if(isInViewport(home)){
@@ -60,6 +62,7 @@ function changeclass(){
         // remove class
         about_nav.classList.remove('active')
         services_nav.classList.remove('active')
+        mywork_nav.classList.remove('active')
     }else if(isInViewport(about)){
         
         // add class 
@@ -67,12 +70,22 @@ function changeclass(){
         // remove class 
         home_nav.classList.remove('active')
         services_nav.classList.remove('active')
+        mywork_nav.classList.remove('active')
     }else if(isInViewport(services)){
         // add class 
         services_nav.classList.add('active')
         // remove class 
         home_nav.classList.remove('active')
         about_nav.classList.remove('active')
+        mywork_nav.classList.remove('active')
+    }else if(isInViewport(mywork)){
+        // add class 
+        mywork_nav.classList.add('active')
+        // remove class 
+        home_nav.classList.remove('active')
+        about_nav.classList.remove('active')
+        services_nav.classList.remove('active')
+
     }
     
 }
