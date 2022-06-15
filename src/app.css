@@ -143,7 +143,9 @@ nav .nav-item .active{
     width: 100vw;
     height: 100vh;
     position: relative;
-    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .home .background{
     position: absolute;
@@ -536,3 +538,59 @@ footer ul li i:hover{
     color: #fff;
 }
 /* footer END */
+/* for ipad */
+@media screen and (max-width:900px){
+        /* About */
+    .about{
+        height: fit-content;
+    }
+    /* content About */
+    .about .content{
+        width: 100%;
+        min-height: calc(100% - 200px);
+        height: fit-content;
+    
+    }
+    /* left content */
+    .about .content .left{
+        width: 100%;
+        height: 700px;
+    }
+    /* left content End*/
+    /* right content */
+    .about .content .right{
+        width: 100%;
+        height: 700px;
+        float: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* right info  */
+    .about .content .right .info{
+        width: 80%;
+    }
+    /* right info  END*/
+    /* right content End*/
+    /* content About ENd*/
+    /* About End */
+    /* services   */
+    .services .content  .item{
+        margin: 10px 10px;
+    }
+    /* services   END */
+    /* my Work */
+    .mywork .content .item{
+        margin: 10px 10px;
+    }
+    /* my work END */
+    /* nav */
+    nav .nav-logo{
+        width: 30%;
+    }
+    nav .nav-item{
+        width: 70%;
+    }
+    /* nav End */
+}
+/* for ipad END */
