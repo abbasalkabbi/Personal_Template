@@ -443,3 +443,50 @@ nav .nav-item .active{
 /*  item  END */
 /* content END  */
 /* my work END */
+/* Contact Me */
+.contact {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10px 80px;
+}
+/* form  */
+.contact form{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.contact form input,textarea{
+    padding: 5px 10px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: #fff;
+    font-family: poppins;
+    margin: 10px 0px;
+}
+.contact form input:focus,textarea:focus{
+    border: 1px solid rgba(0,0,0,1);
+    outline: none;
+}
+.contact form textarea{
+    width: 80%;
+    height: 80px;
+}
+.contact form button{
+    margin-top: 50px;
+    width: 40%;
+    height: 60px;
+    background-color: var(--maincolor);
+    border: none;
+    color: #fff;
+    font-family: poppins;
+
+}
+.contact form button:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+/* form  END*/
+/* Contact Me END */

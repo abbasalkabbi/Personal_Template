@@ -4,6 +4,7 @@ const navbar=document.querySelector("nav"),
     about=document.querySelector('.about'),
     services=document.querySelector('.services'),
     mywork=document.querySelector('.mywork'),
+    contact=document.querySelector('.contact'),
     cursor=document.querySelector(".cursor"),
     cursor2=document.querySelector(".cursor2"),
     a = document.querySelectorAll("a"),
@@ -64,8 +65,9 @@ function isInViewport(elem) {
 function changeclass(){
     let home_nav=document.querySelector(".home-nav"),
     about_nav=document.querySelector(".about-nav"),
-    services_nav=document.querySelector(".services-nav")
-    mywork_nav=document.querySelector(".mywork-nav")
+    services_nav=document.querySelector(".services-nav"),
+    mywork_nav=document.querySelector(".mywork-nav"),
+    contact_nav=document.querySelector(".contact-nav")
     console.log("1")
     // contact_nav=document.querySelector(".contact-nav");
     if(isInViewport(home)){
@@ -75,6 +77,7 @@ function changeclass(){
         about_nav.classList.remove('active')
         services_nav.classList.remove('active')
         mywork_nav.classList.remove('active')
+        contact_nav.classList.remove('active')
     }else if(isInViewport(about)){
         
         // add class 
@@ -83,6 +86,7 @@ function changeclass(){
         home_nav.classList.remove('active')
         services_nav.classList.remove('active')
         mywork_nav.classList.remove('active')
+        contact_nav.classList.remove('active')
     }else if(isInViewport(services)){
         // add class 
         services_nav.classList.add('active')
@@ -90,6 +94,7 @@ function changeclass(){
         home_nav.classList.remove('active')
         about_nav.classList.remove('active')
         mywork_nav.classList.remove('active')
+        contact_nav.classList.remove('active')
     }else if(isInViewport(mywork)){
         // add class 
         mywork_nav.classList.add('active')
@@ -97,7 +102,15 @@ function changeclass(){
         home_nav.classList.remove('active')
         about_nav.classList.remove('active')
         services_nav.classList.remove('active')
-
+        contact_nav.classList.remove('active')
+    }else if(isInViewport(contact)){
+        // add class 
+        contact_nav.classList.add('active')
+        // remove class 
+        home_nav.classList.remove('active')
+        about_nav.classList.remove('active')
+        services_nav.classList.remove('active')
+        mywork_nav.classList.remove('active')
     }
     
 }
