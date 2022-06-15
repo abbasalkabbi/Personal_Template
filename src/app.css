@@ -488,7 +488,9 @@ nav .nav-item .active{
     background-color: var(--maincolor);
     border: none;
     color: #fff;
-    font-family: poppins;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 22px;
 
 }
 .contact form button:hover{
