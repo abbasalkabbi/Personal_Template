@@ -6,7 +6,8 @@ const navbar=document.querySelector("nav"),
     mywork=document.querySelector('.mywork'),
     cursor=document.querySelector(".cursor"),
     cursor2=document.querySelector(".cursor2"),
-    a = document.querySelectorAll("a");
+    a = document.querySelectorAll("a"),
+    item_mywork=document.querySelectorAll(".mywork .item")
 // decaler var End 
 // cursor
 window.addEventListener('mousemove',(e)=> {
@@ -24,6 +25,17 @@ for (let x of a) {
         cursor2.classList.remove('active')
     })
 
+}
+for(let x of item_mywork){
+    x.addEventListener('mousemove',()=>{
+        cursor.classList.add('active')
+        cursor2.classList.add('active')
+        
+    })
+    x.addEventListener('mouseout',()=>{
+        cursor.classList.remove('active')
+        cursor2.classList.remove('active')
+    })
 }
 // cursor End
 // add function to Nav bar 
