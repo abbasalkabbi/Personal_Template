@@ -93,6 +93,14 @@ nav.animate{
 nav .nav-logo{
     width: 50%;
     height: 100%;
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+nav.animate .nav-logo{
+    color: var(--maincolor);
 }
 /* nav-logo END*/
 /* ul item nav */
@@ -490,3 +498,39 @@ nav .nav-item .active{
 
 /* form  END*/
 /* Contact Me END */
+/* footer */
+footer{
+    width: 100vw;
+    height: 200px;
+    border: #000 1px solid;
+    background-color: #000;
+}
+footer p{
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-family: poppins;
+}
+footer ul{
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer ul li{
+    margin: 0px 10px;
+}
+footer ul li i{
+    color: var(--maincolor);
+}
+footer ul li i:hover{
+    color: #fff;
+}
+/* footer END */
