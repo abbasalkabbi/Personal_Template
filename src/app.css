@@ -617,6 +617,9 @@ footer ul li i:hover{
         align-items: center;
         height: 0%;
     }
+    nav .nav-item a{
+        color: #000;
+    }
     nav .nav-item a li {
         margin: 10px 0px;
     }
